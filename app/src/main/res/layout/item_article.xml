@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:padding="8dp"
+                android:layout_height="120dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="100dp"
+            android:id="@+id/articleImage"
+            android:scaleType="centerCrop"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#2a592d"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            tools:srcCompat="@tools:sample/backgrounds/scenic[1]"/>
+
+    <TextView
+            android:id="@+id/articleTitle"
+            android:layout_width="wrap_content"
+            android:layout_toEndOf="@+id/articleImage"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:text="Article Title"
+            android:layout_toRightOf="@+id/articleImage"
+            android:layout_marginStart="8dp"/>
+
+    <TextView
+            android:id="@+id/articleDesc"
+            android:layout_width="match_parent"
+            android:layout_toEndOf="@+id/articleImage"
+            android:layout_margin="8dp"
+            android:layout_below="@+id/articleTitle"
+            android:text="This is article description.This is article description.This is article description.This is article description.This is article description.This is article description."
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/articleImage"/>
+
+</RelativeLayout>
